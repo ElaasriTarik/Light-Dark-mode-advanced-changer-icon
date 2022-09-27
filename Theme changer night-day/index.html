@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="container">
+  <span class="outer_circle">
+   <span class="inner_circle"></span>
+  </span>
+</div>
+
+
+<script type="text/javascript">
+  const outer_circle = document.querySelector('.outer_circle');
+  const inner_circle = document.querySelector('.inner_circle');
+  const container = document.querySelector('.container');
+  outer_circle.addEventListener('click', () => {
+    outer_circle.classList.toggle('move');
+    inner_circle.classList.toggle('innerMove');
+    container.classList.toggle('bg');
+  })
+</script>
+  </body>
+</html>
